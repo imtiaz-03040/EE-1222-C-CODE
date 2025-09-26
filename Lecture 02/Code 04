@@ -1,0 +1,17 @@
+// Program Name: Simple RL Circuit Solver
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 2, 2025.
+#include<stdio.h>
+#include<math.h>
+void main ()
+{
+    float V,R,L,X,Z,I;
+    printf("Enter the value of V,R,L ");
+    scanf("%f%f%f",&V,&R,&L);
+    X=100*3.1416*L;
+    Z=sqrt(R*R+X*X);
+    I=V/Z;
+    printf("%f %f %f", X, Z, I);
+}
+
