@@ -1,0 +1,12 @@
+// Program Name: To print Hello World
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date: 26 August 2025
+
+#include<stdio.h>
+int main()
+{
+    printf("HELLO WORLD!");
+    return 0;
+}
+
