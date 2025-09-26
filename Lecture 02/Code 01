@@ -1,0 +1,13 @@
+// Program Name:  Summation of two integers
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 2, 2025.
+#include <stdio.h>
+void main()
+{
+    int a, b, sum;
+    printf("Enter two numbers-");
+    scanf("%d%d", &a, &b);
+    sum = a + b;
+     printf("Total=%d", sum);
+}
