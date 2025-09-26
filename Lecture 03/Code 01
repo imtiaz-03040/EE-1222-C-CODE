@@ -1,0 +1,21 @@
+// Program Name:  Input Days convert into years,months,weeks,remaining days
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 9, 2025.
+#include<stdio.h>
+void main ()
+{
+    int days, Y,M,D,W;
+    printf("Enter the value of days:");
+    scanf("%d",&days);
+    Y=days/365;
+    D=days%365;
+    M=D/30;
+    W=D/7;
+
+    printf("Y=%d years\n",Y );
+    printf("D=%d days\n",D);
+    printf("M=%d months\n",M);
+    printf("W=%d weeks\n",W);
+
+}
