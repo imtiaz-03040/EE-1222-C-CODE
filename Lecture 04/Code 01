@@ -1,0 +1,23 @@
+// Program Name:  Determining frequency using goto statement
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 23, 2025.
+#include<stdio.h>
+void main ()
+{
+
+
+float R,L,C,f;
+C=0;
+printf("Enter the value of R&L:");
+scanf("%f%f",&R,&L);
+label:
+    C=C+0.01;
+    f=sqrt(1/(L*C)-pow((R/(2*C)),2));
+    printf("%.2f Hz\n",f);
+
+    if(C<=0.1)
+
+        goto label;
+}
+
