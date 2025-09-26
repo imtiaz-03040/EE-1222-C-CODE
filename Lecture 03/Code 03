@@ -1,0 +1,16 @@
+// Program Name:  Determine Salary using age & experience data
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 9, 2025.
+#include<stdio.h>
+void main ()
+{
+  int age,experience,salary;
+  printf("Enter the value:");
+  scanf("%d%d",&age,&experience);
+  if(age>30 && experience>10)
+    printf("salary=50,000 taka \n");
+    else
+        printf("salary=30,000 taka \n");
+
+}
