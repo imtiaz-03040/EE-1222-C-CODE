@@ -1,0 +1,44 @@
+// Program Name:  Find Grade point using switch Statement
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 23, 2025.
+#include<stdio.h>
+void main ()
+{
+    int marks,index;
+    float grade;
+    printf("Enter marks:");
+    scanf("%d",&marks);
+    index=marks/10;
+    switch(index)
+    {
+     case 10:
+        grade = 5.00;
+        break;
+    case 9:
+        grade = 5.00;
+        break;
+    case 8:
+        grade = 5.00;
+        break;
+    case 7:
+        grade = 4.00;
+        break;
+    case 6:
+        grade = 3.50;
+        break;
+    case 5:
+        grade = 3.00;
+        break;
+    case 4:
+        grade = 2.00;
+        break;
+    case 3:
+        grade = 1.00;
+        break;
+    default:
+        grade = 0.00;
+        break;
+    }
+    printf("%f \n",grade);
+}
