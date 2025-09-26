@@ -1,0 +1,30 @@
+// Program Name:  Mesh Circuit Solve through determinig three branch currents
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 2, 2025.
+#include <stdio.h>
+void main()
+{
+   double I1, I2, I3, D, D1, D2, D3;
+   float a1, a2, a3, b1, b2, b3, c1, c2, c3, d1, d2, d3;
+   printf("Enter the value of a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3: ");
+   scanf("%f%f%f%f%f%f%f%f%f%f%f%f", &a1, &a2, &a3, &b1, &b2, &b3, &c1, &c2, &c3, &d1, &d2, &d3);
+   D = a1 * (b2 * c3 - b3 * c2) - b1 * (a2 * c3 - a3 * c2) + c1 * (a2 * b3 - a3 * b2);
+   D1 = d1 * (b2 * c3 - b3 * c2) - b1 * (d2 * c3 - d3 * c2) + c1 * (d2 * b3 - d3 * b2);
+   D2 = a1 * (d2 * c3 - d3 * c2) - d1 * (a2 * c3 - a3 * c2) + c1 * (a2 * d3 - a3 * d2);
+   D3 = a1 * (b2 * d3 - b3 * d2) - b1 * (a2 * d3 - a3 * d2) + d1 * (a2 * b3 - a3 * b2);
+   if (D == 0)
+   {
+      printf("The equation has no unique solution.\n");
+   }
+   else
+   {
+      I1 = D1 / D;
+      I2 = D2 / D;
+      I3 = D3 / D;
+      printf("The solution is :\n");
+      printf("I1=%1f\n", I1);
+      printf("I2=%1f\n", I2);
+      printf("I3=%1f\n", I3);
+   }
+}
