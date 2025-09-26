@@ -1,0 +1,23 @@
+// Program Name: Series Circuit  Solver
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 2, 2025.
+#include<stdio.h>
+void main ()
+{
+    float V,R1,R2,R3,R,I,I1,I2,I3;
+    printf("Enter the value of V,R1,R2,R3-");
+    scanf("%f%f%f%f",&V,&R1,&R2,&R3);
+    R=R1+R2+R3;
+
+   I=I1=I2=I3=V/R;
+    printf("\n--- Series Circuit Results ---\n");
+    printf("Total Resistance (R): %.2f ohms\n", R);
+    printf("Circuit Current (I): %.2f A\n", I);
+    printf("Current through R1 (I1): %.2f A\n", I1);
+    printf("Current through R2 (I2): %.2f A\n", I2);
+    printf("Current through R3 (I3): %.2f A\n", I3);
+
+
+}
+
