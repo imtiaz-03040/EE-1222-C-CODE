@@ -1,0 +1,36 @@
+// Program Name:  grade point using else if Ladder
+// Author Name: Md. Imtiaz Ahmed
+// Department:EEE,KUET
+// Date:September 23, 2025.
+#include<stdio.h>
+void main ()
+{
+    int marks;
+    float grade;
+    printf("Enter marks:");
+    scanf("%d",&marks);
+    if(marks<0 || marks>100)
+        printf("There is no grade point available.\n");
+    else if(marks>79)
+        grade=4.00;
+    else if(marks>74)
+        grade=3.75;
+    else if(marks>69)
+        grade=3.50;
+    else if(marks>64)
+        grade=3.25;
+    else if(marks>59)
+        grade=3.00;
+    else if(marks>54)
+        grade=2.75;
+    else if(marks>49)
+        grade=2.50;
+    else if(marks>44)
+        grade=2.25;
+    else if(marks>39)
+        grade=2.00;
+    else
+        grade=0.00;
+    printf("GPA=%.2f\n",grade);
+
+}
