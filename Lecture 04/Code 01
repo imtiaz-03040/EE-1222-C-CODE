@@ -5,8 +5,6 @@
 #include<stdio.h>
 void main ()
 {
-
-
 float R,L,C,f;
 C=0;
 printf("Enter the value of R&L:");
