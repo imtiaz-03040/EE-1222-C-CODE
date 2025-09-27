@@ -3,6 +3,7 @@
 // Department:EEE,KUET
 // Date:September 23, 2025.
 #include<stdio.h>
+#include<math.h>
 void main ()
 {
 float R,L,C,f;
